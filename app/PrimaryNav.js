@@ -8,7 +8,11 @@ import Trips from "./Trips.js";
 export default class PrimaryNav extends Component {
   render() {
     return (
-      <TabView style={styles.container}>
+      <TabView
+        tabBarUnderlineStyle={{ backgroundColor: "#b60915", height: 2 }}
+        tabBarActiveTextColor={"#b60915"}
+        style={styles.container}
+      >
         <News tabLabel="News"></News>
         <Trips tabLabel="Trips"></Trips>
         <Gear tabLabel="Gear" />

@@ -26,7 +26,6 @@ export default class Welcome extends Component {
         <View style={styles.bottomContainer}>
           <View style={styles.loginContainer}>
             <TouchableOpacity onPress={this.props.logIn}>
-              {/* <Text style={styles.loginText}>Log In</Text> */}
               <Image source={require("../assets/loginText.png")}></Image>
             </TouchableOpacity>
           </View>

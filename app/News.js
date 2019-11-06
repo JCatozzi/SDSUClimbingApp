@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { createNews } from "../services/newsService";
 
 export default class News extends Component {
   render() {
     return (
       <View style={styles.mainContainer}>
         <View style={styles.topContainer}>
-          <Text style={styles.title}>News</Text>
+          <TouchableOpacity onPress={createNews("good news")}>
+            <Text style={styles.title}>News</Text>
+          </TouchableOpacity>
         </View>
         <View style={styles.bottomContainer}></View>
       </View>

@@ -43,5 +43,6 @@ function test() {
 }
 
 module.exports = {
-  createNews
+  createNews,
+  test
 };

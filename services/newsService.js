@@ -24,6 +24,24 @@ function createNews(news_data) {
     });
 }
 
+function test() {
+  console.log("test");
+  fetch(`http://18.216.54.110/`, {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    }
+  })
+    .then(response => response.json())
+    .then(responseJson => {
+      console.log("response: ", responseJson);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
+
 module.exports = {
   createNews
 };

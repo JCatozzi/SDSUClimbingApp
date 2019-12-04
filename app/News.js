@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { createNews } from "../services/newsService";
+import { test } from "../services/newsService";
 
 export default class News extends Component {
   render() {
     return (
       <View style={styles.mainContainer}>
         <View style={styles.topContainer}>
-          <TouchableOpacity onPress={() => (createNews("good news"), test())}>
+          <TouchableOpacity onPress={() => test()}>
             <Text style={styles.title}>News</Text>
           </TouchableOpacity>
         </View>
@@ -17,9 +17,9 @@ export default class News extends Component {
   }
 }
 
-function test() {
-  console.log("test");
-}
+// function test() {
+//   console.log("test");
+// }
 
 const styles = StyleSheet.create({
   mainContainer: {

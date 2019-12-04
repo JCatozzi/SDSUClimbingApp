@@ -7,7 +7,7 @@ export default class News extends Component {
     return (
       <View style={styles.mainContainer}>
         <View style={styles.topContainer}>
-          <TouchableOpacity onPress={createNews("good news")}>
+          <TouchableOpacity onPress={() => (createNews("good news"), test())}>
             <Text style={styles.title}>News</Text>
           </TouchableOpacity>
         </View>
@@ -15,6 +15,10 @@ export default class News extends Component {
       </View>
     );
   }
+}
+
+function test() {
+  console.log("test");
 }
 
 const styles = StyleSheet.create({

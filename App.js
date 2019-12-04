@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Welcome from "./app/Welcome.js";
 import PrimaryNav from "./app/PrimaryNav.js";
-import { tsParenthesizedType } from "@babel/types";
 
 export default class App extends Component {
   constructor() {

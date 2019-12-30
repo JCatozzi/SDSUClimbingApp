@@ -23,6 +23,5 @@ function createNews(news_data) {
 }
 
 module.exports = {
-  createNews,
-  test
+  createNews
 };

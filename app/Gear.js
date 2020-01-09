@@ -8,7 +8,8 @@ export default class Gear extends Component {
         <View style={styles.topContainer}>
           <Text style={styles.title}>Gear</Text>
         </View>
-        <View style={styles.bottomContainer}></View>
+        <View style={styles.gearListContainer}>{/* gear list here */}</View>
+        <View style={styles.addGearContainer}>{/* add gear button */}</View>
       </View>
     );
   }
@@ -29,7 +30,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flex: 1
   },
-  bottomContainer: {
+  gearListContainer: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 4
+  },
+  addGearContainer: {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",

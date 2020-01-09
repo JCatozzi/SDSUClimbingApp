@@ -12,13 +12,16 @@ export default class Welcome extends Component {
   render() {
     return (
       <ImageBackground
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          resizeMode: "contain"
+        }}
         source={require("../assets/sagar.jpg")}
       >
         <View style={styles.topContainer}>
-          {/* <Text style={styles.title}>SDSU CLIMBING</Text> */}
           <Image
-            style={{ width: "100%" }}
+            style={{ width: "100%", resizeMode: "contain" }}
             source={require("../assets/title.png")}
           ></Image>
         </View>
@@ -40,11 +43,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#b60915"
   },
-  title: {
-    fontSize: 35,
-    fontWeight: "500",
-    color: "#b60915"
-  },
   topContainer: {
     flexDirection: "column",
     justifyContent: "center",
@@ -59,7 +57,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "flex-end",
     flex: 1
-    // paddingRight: "10"
   },
   loginContainer: {
     width: 150,

@@ -12,6 +12,7 @@ export default class PrimaryNav extends Component {
         tabBarUnderlineStyle={{ backgroundColor: "#b60915", height: 2 }}
         tabBarActiveTextColor={"#b60915"}
         style={styles.container}
+        tabBarPosition="bottom"
       >
         <News tabLabel="News"></News>
         <Trips tabLabel="Trips"></Trips>
